@@ -1,0 +1,285 @@
+body {max-width: 1922px;margin:0 auto;}
+/* There are some google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+/* Nav section of header */
+.shopping-icon-container {
+  display: none;
+}
+
+header {
+  margin: 2rem auto;
+  width: 80vw;
+
+}
+
+.web-name {
+  color: #06b776;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-container {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.list-container {
+  display: flex;
+  column-gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.list-container li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* ========================== Banner of header ==============================*/
+
+.main-cemra-container {
+  display: flex;
+  height: 30%;
+  align-items: center;
+}
+
+.banner-text-container {
+  width: 50%;
+}
+
+.banner-main-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.cemra-container {
+  background-image: url(../images/Circle\ design.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.cemra-container img {
+  width: 80%;
+  height: 80%;
+  margin-left: 3rem;
+}
+
+/* =================== The logo Section is started from main Tag ================ */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.logo-container img {
+  width: 7vw;
+  height: 7vh;
+}
+            /* =================== The cards of main section started from here ================ */
+
+ .cards-container {display: grid;gap:0.5rem;grid-template-columns: repeat(3, 1fr);}
+ .cards-container article img {width:100%;}
+ .cards-container article {padding:0.6rem;background-color:white;}
+ .card-text {font-family: 'Inter', sans-serif;font-weight: 700;color: #6464ab;}
+ .price {margin-bottom: 0px;}           
+
+       /*  ============================= Last section of main  ====================== */
+       
+.last-section {width:76vw;margin:auto;display:flex;align-items: center;justify-content: center;gap:1rem;}
+
+                                     /* Foooooooooooter */
+
+  .media-icon i {padding:0.4rem;background-color: rgb(36, 12, 12);}                                   
+
+
+       /* ========================== Media Queries ==============================*/
+
+@media screen and (max-width: 576px) {
+  /* Nav section of header */
+  nav {
+    flex-direction: row-reverse;
+  }
+
+  .shopping-icon-container {
+    display: block;
+  }
+
+  .web-name {
+    font-size: 100%;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .list-container {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: black;
+  }
+
+  .bar-container {
+    display: block;
+
+    padding: 1rem;
+  }
+
+  .dropdown:hover .list-container {
+    display: block;
+  }
+
+  .list-container li:hover {
+    background-color: red;
+    padding: 0.3rem;
+  }
+
+  .list-container li a {
+    color: white;
+  }
+
+                         /* Banner Section is started inside media-queries */
+  .banner-main-text {
+    font-size: 1.6rem;
+    color: dimgray;
+  }
+
+  .main-cemra-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-text-container,
+  .cemra-container {
+    width: 100%;
+  }
+
+  .banner-text-container {
+    text-align: center;
+  }
+
+  .cemra-container img {
+    margin-left: 2.5rem;
+  }
+                             /* First part of main section, Logo section has started */
+    
+      .logo-container {display: block;text-align: center;}
+      .logo-container img {width: 16vw;height:7vh;}   
+      
+                /* second part of main section, cards section has started */
+  .cards-container {grid-template-columns: repeat(1, 1fr);}
+                             /*  Last section of main */
+    .last-section {flex-direction: column-reverse;}
+    .some-text {text-align: center;}
+    .last-img-container img{width:100%;}                        
+}
+
+
+      /* ========================== Media Queries For Tablet ==============================*/
+
+ @media screen and (min-width:577px) and (max-width:992px) {
+    
+        /* Nav section of header */
+  nav {
+    flex-direction: row-reverse;
+  }
+
+  .shopping-icon-container {
+    display: block;
+  }
+
+  .web-name {
+    font-size: 100%;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .list-container {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: black;
+  }
+
+  .bar-container {
+    display: block;
+
+    padding: 1rem;
+  }
+
+  .dropdown:hover .list-container {
+    display: block;
+  }
+
+  .list-container li:hover {
+    background-color: red;
+    padding: 0.3rem;
+  }
+
+  .list-container li a {
+    color: white;
+  }
+
+                         /* Banner Section is started inside media-queries */
+  .banner-main-text {
+    font-size: 1.6rem;
+    color: dimgray;
+  }
+
+  .main-cemra-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-text-container,
+  .cemra-container {
+    width: 80%;
+    padding:2rem;
+   
+  }
+
+  .banner-text-container {
+    text-align: center;
+  }
+
+  .cemra-container img {
+    margin-left: 2.5rem;
+  }
+                             /* First part of main section, Logo section has started */
+    
+      .logo-container {display: block;text-align: center;}
+      .logo-container img {width: 16vw;height:7vh;} 
+      
+            /* second part of main section, cards section has started */
+    .cards-container {grid-template-columns: repeat(2, 1fr);}  
+    
+           /*  Last section of main */
+           .last-section {flex-direction: column-reverse;}
+           .some-text {text-align: center;}
+           .last-img-container img{width:100%;}   
+ }      
