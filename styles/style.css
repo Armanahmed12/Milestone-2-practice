@@ -1,8 +1,15 @@
 body {max-width: 1922px;margin:0 auto;}
 /* There are some google font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fasthand&display=swap');
+
 
 /* Nav section of header */
+
+.ripon-text-style {color:rgb(24, 53, 218);
+    font-family: 'Anton', sans-serif;
+}
+
 .shopping-icon-container {
   display: none;
 }
